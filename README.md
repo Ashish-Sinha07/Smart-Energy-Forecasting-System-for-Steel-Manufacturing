@@ -9,8 +9,6 @@ Welcome — this repository contains an end-to-end AI-powered energy analytics s
 Quick jump:
 - Demo / Try it now
 - Installation & Quickstart
-- Notebooks & scripts
-- Models & evaluation
 - Dashboard integration
 - Contributing & 👋 contact
 
@@ -56,12 +54,10 @@ Table of Contents
 - Tech stack
 - Quickstart
 - Notebooks and Scripts
-- Models & Model Zoo
 - Data format
-- Evaluation & Metrics
 - Dashboard & Deployment
 - Contributing
-- License & Contact
+- Contact
 
 About
 -----
@@ -92,19 +88,6 @@ Tech stack
 - Serving / UI: streamlit, flask (examples)
 - Extras: mlflow (optional) for experiment tracking
 
-Notebooks & Scripts (Interactive)
---------------------------------
-- notebooks/01_EDA.ipynb — Exploratory Data Analysis with visualizations and checks
-- notebooks/02_feature_engineering.ipynb — Create lag/rolling and calendar features
-- notebooks/03_modeling_baseline.ipynb — Baseline classical ML models
-- notebooks/04_deep_learning.ipynb — LSTM/GRU experiments
-- scripts/run_quick_forecast.py — Minimal CLI to run a quick forecast
-- scripts/train_model.py — Full training script with config file support
-- src/dashboard/energy_dashboard.py — Streamlit dashboard to visualize data + predictions
-
-Try in Google Colab / Binder
----------------------------
-Open the primary notebooks interactively in Colab by uploading the notebook or using "Open in Colab" links (you can add direct Colab badges to the notebooks if desired). For reproducible environments try Binder.
 
 Data format
 -----------
@@ -121,14 +104,6 @@ import pandas as pd
 df = pd.read_csv('data/sample/sample_energy.csv', parse_dates=['timestamp'])
 df.set_index('timestamp').head()
 ```
-
-Model Zoo
----------
-- classical/xgboost_train.py — Train XGBoost on engineered features
-- classical/rf_train.py — RandomForest baseline
-- dl/lstm_train.py — LSTM/GRU models with Keras
-- prophet/prophet_forecast.py — Prophet forecasting example
-
 Each training script writes model artifacts to models/<model-name>/ with timestamps.
 
 Evaluation & Metrics
@@ -189,22 +164,8 @@ Suggested workflow:
 3. Add tests (if applicable)
 4. Open a Pull Request describing your changes
 
-License
--------
-This project uses the MIT License — see LICENSE file for details.
-
 Contact
 -------
 Maintainer: Ashish Sinha (@Ashish-Sinha07)
 - GitHub: https://github.com/Ashish-Sinha07
 - For questions or collabs, open an issue or connect on GitHub.
-
-What's next
------------
-- Try the Quickstart flow above, run the notebooks, and launch the Streamlit dashboard.
-- If you'd like, I can:
-  - Add "Open in Colab" badges for the notebooks
-  - Create a Binder/Repo2Docker config
-  - Scaffold a GitHub Actions CI workflow to run tests and linting
-
-If you want any of those, tell me which and I'll prepare the files and steps.
