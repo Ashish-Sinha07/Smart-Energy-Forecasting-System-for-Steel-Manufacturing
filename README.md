@@ -2,7 +2,6 @@
 
 [![Domain](https://img.shields.io/badge/Domain-Energy%20Analytics-blue?style=for-the-badge)](https://github.com/Ashish-Sinha07/Smart-Energy-Forecasting-System-for-Steel-Manufacturing)
 [![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20ML%20%7C%20DL-green?style=for-the-badge)]()
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Welcome — this repository contains an end-to-end AI-powered energy analytics system tailored for real-world steel manufacturing. It includes data cleaning, EDA, feature engineering, time-series splits, modeling (classical ML & deep learning), and example dashboards for visualization and monitoring.
 
